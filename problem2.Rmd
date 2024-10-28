@@ -1,0 +1,85 @@
+---
+title: "Problem 2"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+library(tidyverse)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+```{r}
+data("instacart")
+
+instacart_df = instacart |>
+  select(department, aisle, order_hour_of_day, order_dow)
+```
+
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+instacart_df |>
+  group_by(department, aisle, order_hour_of_day) |>
+  summarize(total_order = n(), .groups = "drop") |> 
+  arrange(department, desc(total_order)) |> 
+  group_by(department) |> 
+  slice_head(n = 1) |> 
+  ungroup() |>
+  mutate(aisle = reorder(aisle, total_order)) |>
+  plot_ly(x = ~aisle, y = ~total_order, color = ~department,
+          colors = "viridis",
+          type = "bar", name = ~department) |> 
+  layout(title = "Total Orders by Top Aisle per Department",
+         xaxis = list(title = "Top Aisle"),
+         yaxis = list(title = "Total Orders"),
+         legend = list(title = list(text = "Department")))
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart_df |> 
+    group_by(department) |> 
+    plot_ly(x = ~department, 
+        y = ~order_hour_of_day, 
+        color = ~department,
+        colors = "viridis",
+        type = "box") |>
+  layout(showlegend = FALSE,
+         title = "Order Hours per Department",
+         xaxis = list(title = "Department"),
+         yaxis = list(title = "Order Hour of Day"))
+```
+
+### Chart C
+
+```{r}
+day_names = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+
+instacart_df |>
+  count(order_dow, order_hour_of_day) |>
+  mutate(order_dow = factor(order_dow, levels = 0:6, labels = day_names)) |>
+  plot_ly(x = ~order_dow, 
+  y = ~order_hour_of_day, 
+  z = ~n, 
+  type = "heatmap", 
+  colors = "viridis") |>
+  layout(title = "Order Frequency by Day and Hour",
+    xaxis = list(title = "Day of the Week"),
+    yaxis = list(title = "Hour of the Day"))
+```
+
