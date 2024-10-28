@@ -1,0 +1,7 @@
+---
+title: "Stella Koo"
+---
+
+### Aspiring Data Scientist and Life Science Consultant
+I am currently a Biostatistics Master’s student at Columbia University with a background in biology and pharmaceutical industry. My experience spans clinical trials, public health research, and data analysis, where I use Python, R, and SQL to drive insights in health and consulting. 
+
