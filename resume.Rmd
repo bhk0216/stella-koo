@@ -1,0 +1,83 @@
+---
+title: "Resume"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+<style>
+body {
+    font-size: 16px; 
+    line-height: 1.6; 
+}
+</style>
+
+<h3><i class="fa-solid fa-school"></i> Education</h3>
+**Master of Science in Biostatistics (Track: Public Health Data Science)**  
+*Columbia University Mailman School of Public Health*  
+Expected May 2026  
+
+* Relevant Coursework: Biostatistical Methods, Data Science, Probability, Statistical Inference and Computing
+
+**Bachelor of Arts in Molecular and Cell Biology**  
+*University of California, Berkeley*  
+August 2019 – May 2022  
+
+<h3><i class="fa-solid fa-magnifying-glass-chart"></i> Research & Analysis Experience</h3>
+**Cohen Lab, Department of Environmental Health Sciences, Columbia University, New York, NY**  
+*Graduate Research Assistant*  
+August 2024 – Present
+
+* Clean, preprocess, and manage large-scale biological datasets across 4+ populations, facilitating advanced analysis of aging patterns and physiological dysregulation measures
+* Conduct robust statistical analyses, applying techniques such as regression, multivariate analysis, and statistical inference, using R and SQL to identify significant biomarkers linked to physiological dysregulation
+ 
+**Migration and Nutrition Epidemiology (MaNE) Group, Columbia University, New York, NY**  
+*Graduate Research Assistant*  
+September 2024 – Present  
+
+* Organize and transform data from 100 migration experience transcriptions in Spanish into structured formats, improving comprehensive analysis of migration routes, temperatures, and activities
+* Analyze and visualize data from 150+ surveys using Excel and Python to identify key trends in food insecurity, leading to strategic recommendations for expanding food access for students
+
+<h3><i class="fa-solid fa-pills"></i> Pharmaceutical Experience</h3>
+**Grifols Diagnostic Solutions Inc., Emeryville, CA**  
+*QC Analyst*  
+August 2022 – August 2024
+
+* Acquired comprehensive knowledge of the pharmaceutical product lifecycle, encompassing all stages from research and development (R&D), and regulatory submission, to commercial release
+* Collaborated with cross-functional teams, including Manufacturing, Quality Assurance, and R&D, to ensure cGMP and SOP compliance on new testing protocols, enhancing overall operational productivity
+* Conducted compliant testing on 20+ drug substances and final bulk products for immunological disorders, ensuring timely and efficient product release while maintaining rigorous quality standards
+
+**Samsung Bioepis, Incheon, South Korea**  
+*Manufacturing Science and Technology (MSAT) Intern*  
+June – August 2021 
+
+* Conducted a comprehensive individual investigation comparing the effectiveness of two Protein A resins in affinity chromatography for denosumab biosimilar during a Phase III clinical trial, contributing to data-driven decision-making
+* Developed and implemented a chromatography method using UNICORN software and AKTA Avant, improving purification performance and process optimization by 20%
+* Presented results to global heads of each department and proposed detailed strategy to improve the purification
+
+<h3><i class="fa-regular fa-newspaper"></i> Publication</h3>
+**Berkeley Pharma Tech, Remote**  
+*Medical Research Intern*  
+February – May 2022
+
+* Chu, N., Jeyakumar, S., Koo, B. H., Grandhi, U. and Nguyen, V. (2022) “Novel Methods for Inducing Cardiac Tissue Regeneration Following Ischemic Injury”, https://doi.org/10.52243/bptjm.v1i2.24
+
+<h3><i class="fa-solid fa-handshake-angle"></i> Volunteer & Leadership</h3>
+**University Health Services, Tang Center, Berkeley, CA**   
+*Pharmacy Volunteer*  
+October – December 2021
+
+* Collaborated closely with pharmacists and technicians, focusing on effective collaboration and communication to support pharmacy operations and patient interactions
+
+**Coolghim Academy, Seoul, South Korea**  
+*Teacher Assistant*  
+August 2020 – May 2021 
+
+* Developed advanced communication and training skills to deliver content clearly and effectively, significantly enhancing students’ engagement and understanding
+
+<h3><i class="fa-solid fa-lightbulb"></i> Skills</h3>
+
+* **Programming & Visualization Skills:** Python (Matplotlib, Pandas), R (ggplot, dplyr, tidyr, shiny, lm), SQL, Latex, Git, Excel  
+* **Statistical Skills:** Data Science Pipeline, Statistical Modeling, Hypothesis Testing, Regression, Multivariate Analysis  
+* **Languages:** English, Korean, Spanish (All Native Level)
+
