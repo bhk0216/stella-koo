@@ -1,9 +1,7 @@
 ---
 title: "Problem 2: Instacart Dataset"
 output: 
-  flexdashboard::flex_dashboard:
-    orientation: columns
-    vertical_layout: fill
+  flexdashboard::flex_dashboard
 ---
 
 ```{r setup, include=FALSE}
@@ -26,7 +24,7 @@ instacart_df = instacart |>
 Column {data-width=550}
 -----------------------------------------------------------------------
 
-### Chart A
+### Total Orders by Top Aisle per Department
 
 ```{r}
 instacart_df |>
@@ -40,8 +38,7 @@ instacart_df |>
   plot_ly(x = ~aisle, y = ~total_order, color = ~department,
           colors = "viridis",
           type = "bar", name = ~department) |> 
-  layout(title = "Total Orders by Top Aisle per Department",
-         xaxis = list(title = "Top Aisle"),
+  layout(xaxis = list(title = "Top Aisle"),
          yaxis = list(title = "Total Orders"),
          legend = list(title = list(text = "Department")))
 ```
@@ -49,7 +46,7 @@ instacart_df |>
 Column {data-width=450}
 -----------------------------------------------------------------------
 
-### Chart B
+### Order Hours per Department
 
 ```{r}
 instacart_df |> 
@@ -60,12 +57,11 @@ instacart_df |>
         colors = "viridis",
         type = "box") |>
   layout(showlegend = FALSE,
-         title = "Order Hours per Department",
          xaxis = list(title = "Department"),
          yaxis = list(title = "Order Hour of Day"))
 ```
 
-### Chart C
+### Order Frequency by Day and Hour
 
 ```{r}
 day_names = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
@@ -78,8 +74,7 @@ instacart_df |>
   z = ~n, 
   type = "heatmap", 
   colors = "viridis") |>
-  layout(title = "Order Frequency by Day and Hour",
-    xaxis = list(title = "Day of the Week"),
+  layout(xaxis = list(title = "Day of the Week"),
     yaxis = list(title = "Hour of the Day"))
 ```
 
